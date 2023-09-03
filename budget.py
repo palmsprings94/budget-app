@@ -81,7 +81,7 @@ def create_spend_chart(categories):
     lines = "    " + "---" * len(categories) + "-\n"
     chart = chart + lines
     for i in range(len(longest)):
-        chart += "     "
+        chart = chart + "     "
         for cats in categories:
             try:
                 chart = chart + cats.category[i] + "  "
